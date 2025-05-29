@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>     </title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='Title' content=''>
+<meta name='Subject' content=''>
+<meta name='Keywords' content=''>
+<meta name='Author' content=''>
+<meta name='Publisher' content=''>
+<meta name='Description' content=''>
+<meta name='Author-Date' content=''>
+<meta name='Copyright' content=''>
+
+<!-- 접근성 텍스트(skip) 숨김 -->
+<style>#skip{overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}</style>
+
+<!-- 폰트어썸 -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<!-- 구글폰트 아이콘 -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+
+<!-- CSS 리셋 -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+<!-- 제이쿼리 3.7 CDN -->
+<script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+
+<!-- 로컬 CSS -->
+<link rel='stylesheet' href='./css/style.css'/>
+
+<!-- 로컬 js -->
+<script src='./js/script.js' defer></script>
+
+</head>
+<body>
+<!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
+
+<ul id='skip'>
+   <li><a href='#header'>헤더 바로가기</a></li>
+   <li><a href='#nav'>메뉴 바로가기</a></li>
+   <li><a href='#content'>내용 바로가기</a></li>
+</ul>
+
+<!-- 공백을 위한 공간입니다. -->
+
+    <!-- 텍스트박스 -->
+    <div class="box">
+        <h2>value조작</h2>
+        <form action="#">
+            <input type="text" id="input1" size="50" value="텍스트필드입니다">
+            <textarea name="textarea1" id="textarea1">예진아 잘하고 있어</textarea>
+            <select name="" id="select1">
+                <option value="city1">서울</option>
+                <option value="city2">대전</option>
+                <option value="city3">종각</option>
+            </select>
+            <select name="" id="select2" multiple>
+                <option value="town1">동구</option>
+                <option value="town2">중구</option>
+                <option value="town3">서구</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- 내용 비우기 -->
+    <div class="box">
+        <h2>내용 비우기 empty</h2>
+        <div id="emp">10분 후 쉬는 시간</div>
+    </div>
+
+    <!-- insert -->
+    <div class="box">
+        <h2>insertAfter/insertBefore</h2>
+        <hr>
+        <div class="insert">
+            <p>우리반 금요일날 단체 투표입니다.</p>
+            <p>결석 노노</p>
+            <p>지각 노노</p>
+        </div>
+    </div>
+
+    <!-- append/prepend -->
+    <div class="box">
+        <h2>append/prepend</h2>
+        <hr>
+        <div class="append">
+            <div id="basket">basket</div>
+            <div id="apple">apple</div>
+            <div id="banana">banana</div>
+            <div id="orange">orange</div>
+        </div>
+    </div>
+
+    <!-- 이미지 호버:확대,축소 -->
+    <div class="box">
+        <h2>이미지 확대</h2>
+        <div class="img">
+            <a href="#"><img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA0MjlfMTcx/MDAxNzE0Mzg3NjM5MTYw.Q_R5xBNodK0Z1bWiTEHXT8gAYg9HmR2mQzTFlY2oswAg.KtUm76JbaM3XHhzcXF_yuv8pHZKozrJ4aHk2qzisxGcg.PNG/image.png?type=w800" alt="" width="300"></a>
+        </div>
+    </div>
+    
+    <!-- 네모 테두리에 라인 움직임 -->
+    <div class="box">
+        <h2>라인</h2>
+        <div class="line">
+            <div class="topLine"></div>
+            <div class="bottomLine"></div>
+            <div class="leftLine"></div>
+            <div class="rightLine"></div>
+        </div>
+    </div>
+
+    <!-- 버튼에 클릭 후 색갈 입히기 -->
+    <div class="box">
+        <h2>그룹이벤트 등록하는 방법1</h2>
+        <button class="btn1">버튼</button>
+        <hr>
+        <h2>그룹이벤트 등록하는 방법2</h2>
+        <button class="btn2">버튼</button>
+        <hr>
+        <h2>그룹이벤트 등록하는 방법3</h2>
+        <button class="btn3">버튼</button>
+    </div>
+
+    <!-- http:// 링크 버튼을 이용해 사용하기 -->
+    <div class="box">
+        <h2>preventDefault() 기본 이벤트 차단</h2>
+        <p><a href="http://www.naver.com" class="btn4">네이버 버튼</a></p>
+        <p class="txt4">여기는 내용을 정리4</p>
+        <br>
+        <p><a href="http://www.naver.com" class="btn5">네이버 버튼</a></p>
+        <p class="txt5">여기는 내용을 정리5</p>
+        <br>
+        <p><button class="btn6">버튼6</button></p>
+        <br>
+        <p class="txt6">여기는 내용을 정리6</p>
+    </div>
+
+    <!-- hover를 이용해 마우스를 갖다땠다 글자 보이기 -->
+    <div class="box">
+        <h2>hover</h2>
+        <div class="hover">hover</div>
+
+        <h2>mouseenter / mouseleave</h2>
+        <div class="mouse">포인터영역</div>
+
+        <h2>mousemove</h2>
+        <h2>focus / blur</h2>
+        <input type="text" class="focus">
+    </div>
+
+    <!-- 클릭하면 재미없지?->왕 재미있다 로 바뀌기 -->
+    <div class="box">
+        <h2>click</h2>
+        <div class="clickTitle">재미없지?</div>
+        <div class="clickTitle">재미없지?</div>
+        <div class="clickTitle">재미없지?</div>
+        <div class="clickTitle">재미없지?</div>
+        <div class="clickTitle">재미없지?</div>
+        <div id="imgContainer" style="margin-top: 20px;">
+            
+        </div>
+    </div>
+</body>
+</html>
