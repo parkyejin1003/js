@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 선택자</title>
+</head>
+<body>
+    <h1 id="title">자바스크립트 선택자</h1>
+    <div class="container">
+        <ul id="list1" class="list">
+            <li>li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li>li 4</li>
+            <li>li 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list2" class="list">
+            <li>li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li>li 4</li>
+            <li>li 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list3" class="list">
+            <li class="red">li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li>li 4</li>
+            <li id="list3_5">li 5</li>
+            <li>li 6</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="box">
+            box level1
+            <div>
+                box level2
+                <div>
+                box level3
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate tempora possimus, consequuntur accusantium illum, porro expedita animi blanditiis voluptatum officia rerum quas obcaecati quia architecto, aspernatur laboriosam nemo atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate tempora possimus, consequuntur accusantium illum, porro expedita animi blanditiis voluptatum officia rerum quas obcaecati quia architecto, aspernatur laboriosam nemo atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate tempora possimus, consequuntur accusantium illum, porro expedita animi blanditiis voluptatum officia rerum quas obcaecati quia architecto, aspernatur laboriosam nemo atque!</p>
+
+    <script>
+        const firstTitle=document.getElementById('title')
+        const mylist=document.getElementsByClassName('list')
+        const mylist1=document.querySelector('list')
+        const para=document.getElementsByTagName('p')
+
+        document.getElementById('title').style.color='red'
+        //mylist[0].style.color='pink'
+        mylist1.style.color='pink'
+        para[0].style.color="red"
+        para[1].style.color="red"
+    </script>
+</body>
+</html>
