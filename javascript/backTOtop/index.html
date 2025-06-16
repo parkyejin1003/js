@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stlye.css">
+</head>
+<body>
+    <header id="top">
+        <h1>Top</h1>
+        <h2>TopTop</h2>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Asperiores debitis enim eaque dolorum facilis corporis</p>
+        <p>ad repellendus labore, ipsam et rerum expedita assumenda</p> 
+        <p>mollitia officiis dignissimos omnis alias dolores! Asperiores.</p>
+        <p>mollitia officiis dignissimos omnis alias dolores! .</p>
+        <p>mollitia officiis dignissimos omnis  dolores! Asperiores.</p>
+        <p>mollitia officiis dignissimos omnis alias ! Asperiores.</p>
+        <p>mollitia officiis dignissimos  alias dolores! Asperiores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Asperiores debitis enim eaque dolorum facilis corporis</p>
+        <p>ad repellendus labore, ipsam et rerum expedita assumenda</p> 
+        <p>mollitia officiis dignissimos omnis alias dolores! Asperiores.</p>
+        <p>mollitia officiis dignissimos omnis alias dolores! .</p>
+        <p>mollitia officiis dignissimos omnis  dolores! Asperiores.</p>
+        <p>mollitia officiis dignissimos omnis alias ! Asperiores.</p>
+        <p>mollitia officiis dignissimos  alias dolores! Asperiores.</p>
+    </main>
+    <footer>
+        <a href="#" id="back-to-top">Top</a>
+    </footer>
+
+    <script>
+        let btn=document.getElementById('back-to-top');
+        let docEl=document.documentElement; //문서자체를 html로 가져와서 변수에 대입
+        let offset;
+        let scrollPos;
+        let docheight;
+
+        docheight=Math.max(docEl.offsetHeight, docEl.scrollHeight);
+        if(docheight !=0){
+            offset=docheight /4
+        }
+        /* console.log(docheight) */
+        window.addEventListener('scroll', function(){
+            scrollPos=docEl.scrollTop;
+
+            if(scrollPos>offset){
+                btn.className='visible'
+            }else{
+                btn.className=''
+            }
+           /* btn.className=(scrollPos>offset) ? 'visible':'' */
+        })
+        
+        btn.addEventListener('click',function(e){
+            e.preventDefault();
+            /* docEl.scrollTop=0 */
+            scrollToTop();
+
+        })
+        function scrollToTop(){
+            let scrollInterval=setInterval(function(){
+                if(scrollPos !=0){
+                    window.scrollBy(0,-55)
+                }else{
+                    clearInterval(scrollInterval)
+                }
+            },15)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <script>
+        let num=2.3651;
+        let maxNum=Math.max(10,2,1,5,16) //()안에 제일 큰값이 콘솔창에 띄움
+        console.log(maxNum)
+        let minNum=Math.min(10,2,1,5,16) //()안에 제일 작은값이 콘솔창에 띄움
+        console.log(minNum)
+        let rooundnum=Math.round(num);//소수점 바로 다음 첫번째 자리에서 반올림, 반올림: 5이상-3, 5이하-2
+        console.log(rooundnum)
+        let floorNum=Math.floor(num) //소수점 첫번째 자리부터 삭제
+        let ceilNum=Math.ceil(num) //소수점 첫번째 자리에서 반올림
+        console.log(ceilNum)
+        let randomNum=Math.random(num) //랜덤으로 숫자 아무거나 띄움
+        console.log(randomNum)
+    </script>
+    <h2>random</h2>
+    <script>
+        let rn=Math.floor(Math.random()*11)+120 //랜덤 숫자 중 10번째 번호부터 120번쨰 번호까지 띄움
+        console.log(rn)
+    </script>
+</body>
+</html>

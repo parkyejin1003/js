@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>문자열</h2>
+    <script>
+        let str="hello world";
+        let str1="javascript";
+        let str2=str.indexOf('world')
+        /* console.log(str2) */
+        let newStr1=str.concat(str1) //문자열 연결
+        console.log(newStr1)
+    </script>
+    <h2>타이머</h2>
+    <script>
+        //setTimeout(function(){},3000)
+        //시간이 지나면 할 일
+        let timer=setTimeout(function(){
+            alert('졸려? 공부하기 좋은 날인데')
+            //timer()반복시키기
+        },3000)
+        clearTimeout(timer)
+
+        //setinterval(function(){}=할일, 시간)
+        //일정 시간마다 할일
+        let timer1=setInterval(function(){
+            alert('졸려? 공부하기 좋은 날인데')
+        },3000)
+        clearInterval(timer1)
+    </script>
+</body>
+</html>
