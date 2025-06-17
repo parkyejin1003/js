@@ -39,3 +39,11 @@
 #signUp ul li input:focus{
     outline: none;
 }
+#submit{
+    width: 100%;
+    background-color: rgb(255, 104, 129);
+    color: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: none;
+}
